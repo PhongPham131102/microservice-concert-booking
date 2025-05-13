@@ -28,8 +28,7 @@ export class AuthService {
 
     const data = {
       username: user.username,
-      name: user.name,
-      role: user.role,
+      name: user.fullName,
     };
     return {
       status: StatusResponse.SUCCESS,
@@ -72,7 +71,7 @@ export class AuthService {
 
     const data = {
       username: user.username,
-      name: user.name,
+      name: user.fullName,
     };
 
     return {
